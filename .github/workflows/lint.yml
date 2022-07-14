@@ -11,8 +11,8 @@ on:
       - main
 
 jobs:
-  run-linters:
-    name: Run linters
+  run-linter:
+    name: Run linter
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: Install Python dependencies
+      - name: Install Flake8
         run: pip install flake8
 
       - name: Run linter
