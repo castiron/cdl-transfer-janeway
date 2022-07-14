@@ -316,6 +316,8 @@ class UserSerializer(TransporterSerializer):
             "affiliation": "None"
         }
 
+
+
     email = EmailField()
     first_name = CharField(**OPT_STR_FIELD)
     last_name = CharField(**OPT_STR_FIELD)
